@@ -1,3 +1,8 @@
+*{
+    font-family: 'Montserrat';
+    text-decoration: none;
+}
+
 body{
     width: 100vw;
     height: 100vh;
@@ -11,4 +16,42 @@ body{
 
 .right-side{
     background-color: gainsboro;
+    display: inline-grid;
+    grid-template-rows: 2.5fr 10fr;
+}
+
+header{
+    display: inline-grid;
+    background-color: white;
+    grid-template-rows: 4fr 5fr;
+}
+
+.header-top{
+    display: inline-grid;
+    grid-template-columns: 0.04fr 0.04fr 0.6fr 0.06fr 0.045fr 0.06fr 0.15fr;
+    align-items: center;
+}
+
+
+.header-top>svg{
+    height: 3.4vh;
+}
+
+.search-bar{
+    background-color: #E2E8F0;
+    height: 3.8vh;
+    width: 45vw;
+    border-radius: 16px;
+    border: none;
+}
+
+.round-image>img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.header-top>p{
+    font-weight:bolder;
+    font-size: 20px;
 }
