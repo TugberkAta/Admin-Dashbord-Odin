@@ -1,0 +1,14 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: inline-grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.left-panel{
+    background-color: #1A92D3;
+}
+
+.right-side{
+    background-color: gainsboro;
+}
