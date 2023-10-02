@@ -12,7 +12,7 @@ body{
 
 .left-panel{
     display: grid;
-    grid-template-rows: 0fr 0.5fr 0.3fr ;
+    grid-template-rows: 0fr 0.2fr 0.2fr ;
     background-color: #4F4789;
     gap: 30px;
 }
@@ -35,16 +35,26 @@ body{
     color: white;
     height: min-content;
     width: min-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .first-set-links{
     display: inline-grid;
     grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    height: 40vh;
+}
+
+.first-set-links svg, .second-set-links svg, .left-panel svg{
+    width: 2vw;
+    fill: white;
 }
 
 .second-set-links{
     display: inline-grid;
     grid-template-rows: 0.3fr 0.3fr 0.3fr;
+    height: 20vh;
 }
 
 .right-side{
@@ -96,7 +106,7 @@ header{
 .header-bottom{
     display: inline-grid;
     align-items: center;
-    grid-template-columns:0.3fr 1.3fr 0.3fr 0.3fr 0.4fr;
+    grid-template-columns:0.2fr 1.3fr 0.3fr 0.3fr 0.4fr;
     margin-left: 3vw;
 }
 
@@ -140,15 +150,16 @@ header{
 
 .left-tabs{
     display: grid;
+    overflow: hidden;
     grid-template-rows: 1.4fr 2fr 2fr;
     width: 25vw;
     height: 26vh;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: inset 0.5em 0em #F0B42A;
+    border-radius: 8px;
+    box-shadow: inset 0.5em 0em #F0B42A , 0px 3px 8px rgba(0, 0, 0, 0.219);
 }
 
-.right-tabs{
+.first-right-tab, .second-right-tab{
     width: 20vw;
     height: 40vh;
     background-color: white;
@@ -185,4 +196,69 @@ header{
     gap: 15px;
     margin-left: 15vw;
     align-self: center;
+}
+
+.first-right-tab{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.219);
+}
+
+.first-right-tab>div{
+    width: 15vw;
+    border-bottom: solid 1px #6363634f;
+}
+
+.first-right-tab>div:last-child{
+    border-bottom: none;
+}
+
+.first-right-tab>div>p:first-child{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.first-right-tab>div>p:last-child{
+    font-size: 11px;
+    color: #636363;
+    margin-top: 0px;
+}
+
+.second-right-tab{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.219);
+}
+
+.second-right-tab>a{
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.second-right-tab>a>svg{
+    width: 6vh;
+}
+
+.second-right-tab>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-right-tab>a>div>p{
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: black;
+}
+
+.second-right-tab>a>div>p:last-child{
+    margin-top: 0px;
+    color: #636363;
+    font-size: 11px;
 }
